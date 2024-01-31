@@ -1,8 +1,9 @@
 @charset "utf-8";
 
-/* html{
+/* html這個把大致上的版面文字都用完再加上 */
+html{
     scroll-behavior: smooth;
-} */
+}
 
 body{
     font-family: Arial, Helvetica, "微軟正黑體" ,sans-serif;
@@ -52,9 +53,8 @@ img{
     width: 80px;
 }
 
-.header-body {
-    /* background-color: bisque; */
-}
+/* .header-body { */
+    /* background-color: bisque;} */
 
 .header-img {
     max-width: 100%;
@@ -193,4 +193,72 @@ img{
 
 .banner-img-desktop{
     margin-left: 4.5rem;
+}
+
+/* ---------footer-------- */
+
+.footer{
+    background-color:#666;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 7rem 1rem 1rem;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+}
+
+.footer-ul {
+    display: flex;
+}
+
+.footer-li {
+    margin-left: 1rem;
+}
+
+/* 右邊 */
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 600;
+    transition-duration: 3s;
+}
+
+.footer-link:hover {
+    color: #cf7688;
+}
+
+/* 左邊 */
+.footer-img-logo {
+    max-width: 40px;
+    height: auto;
+    margin-bottom: .5rem;
+}
+
+.footer-desc {
+    font-size: .9rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ----------aside---------- */
+
+.aside {
+    position: fixed;
+    right: 1rem;
+    bottom: 15rem;
+    z-index: 10;
+}
+
+.aside-link-top {
+    font-size: 3rem;
+}
+
+.aside-link {
+    color: rgba(0,0,0,.2);
+    transition-duration: 3s;
+}
+
+.aside-link:hover {
+    color: rgba(0,0,0,.5)
 }
